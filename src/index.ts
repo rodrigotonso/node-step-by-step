@@ -1,4 +1,7 @@
-import express from 'express'
+import express from "express";
+import CONSTANTS from "./config/constants";
 const app = express();
 
-app.listen(3011,()=>console.log('listen in port 3011'))
+app.listen(CONSTANTS.APP.PORT, () =>
+    console.log("listening in port", CONSTANTS.APP.PORT)
+);
